@@ -1,3 +1,8 @@
 <p>post works!</p>
-<img src={{imgUrl}} alt="">
+<!-- <img src={{imgUrl}} (click)=""  alt=""> -->
+<!-- property binding  if image detect change --> 
+
+<img [src]="imgUrl" (click)="changeImage($event)"  alt="random image ">
+<!-- on click events -->
+
 <ng-content></ng-content>
