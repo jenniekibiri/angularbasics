@@ -2,3 +2,10 @@
 h1{
     color: red;
 }
+.active{
+    margin: 10px;
+    border: none;
+    padding: 10px;
+    background-color: #4CAF50;
+    border-radius: 10px;
+}

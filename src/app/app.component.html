@@ -1,15 +1,21 @@
-<div class="text-center"> 
-
+<div class="text-center">
   hello world
   <!-- keyboard events  pass data to child-->
-<input type="text"(keyup)="changeImg($event)" [value]="imgUrl"/>
-
-<h1>{{title}}</h1>
-  <p>hello {{name.toUpperCase()}}</p>
-  <p>{{getName()}} this is from a method</p>
-  <app-post [img]="imgUrl" >
-<h1>helllo</h1>
-
+  <input type="text" (keyup)="changeImg($event)" [value]="imgUrl" />
+  <h1>{{ title | titlecase }}</h1>
+  <p>hello {{ name.toUpperCase() }}</p>
+  <p>{{ getName() }} this is from a method</p>
+  <button
+    (click)="blueClass = !blueClass"
+    [ngClass]="{active: blueClass}"
+  >
+    click
+  </button>
+  <app-post [postImg]="imgUrl" (imgSelected)="changeImageOnClick($event)">
+    <h1>helllo</h1>
+    <h3>{{ date | date: "short" }}</h3>
+    <p>{{ money | currency: "KSH" }}</p>
+    <p>{{ money | number: "1.4" }}</p>
   </app-post>
 </div>
 

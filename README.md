@@ -30,7 +30,7 @@ pipes
 add components
 lifecycle
 compoenet generation
-
+alias
 <!-- ts basics -->
 types union types
 events

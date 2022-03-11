@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-post',
@@ -6,10 +6,9 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./post.component.css'],
 })
 export class PostComponent {
-  @Input('img') postImg:string = ''
+  @Input() postImg:string = ''
+  @Output() imgSelected = new EventEmitter<string>()
+  //create event emitter that will emit a string on image cclick
+  // @Input('img') postImg:string = ''  avoid using alias
 
-  imgUrlReplace = 'https://picsum.photos/200/300';
-  changeImage(e: Event | any) {
-    e['target']['src'] = this.imgUrlReplace;
-  }
 }
