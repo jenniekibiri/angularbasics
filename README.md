@@ -28,9 +28,11 @@ handle events
 directives
 pipes
 add components
+lifecycle
+compoenet generation
 
 <!-- ts basics -->
-types
+types union types
 events
 generics
 decorators
