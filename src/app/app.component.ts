@@ -8,3 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'basics';
 }
+
+//all logic goes in here
