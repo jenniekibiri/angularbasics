@@ -8,8 +8,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'basics';
   name='jenny';
+  imgUrl='https://picsum.photos/seed/picsum/200/300'
   getName(){
     return this.name;
+   
   }
 }
 
