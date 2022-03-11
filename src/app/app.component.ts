@@ -13,6 +13,10 @@ export class AppComponent {
     return this.name;
    
   }
+  changeImg(e:KeyboardEvent){
+  console.log((e.target as HTMLInputElement).value);
+  this.imgUrl=(e.target as HTMLInputElement).value;
+  }
 }
 
 //all logic goes in here

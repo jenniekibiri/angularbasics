@@ -1,10 +1,13 @@
 <div class="text-center"> 
 
   hello world
+  <!-- keyboard events  pass data to child-->
+<input type="text"(keyup)="changeImg($event)" [value]="imgUrl"/>
+
 <h1>{{title}}</h1>
   <p>hello {{name.toUpperCase()}}</p>
   <p>{{getName()}} this is from a method</p>
-  <app-post>
+  <app-post [img]="imgUrl" >
 <h1>helllo</h1>
 
   </app-post>
